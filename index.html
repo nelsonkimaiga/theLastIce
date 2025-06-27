@@ -1,0 +1,582 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>The Last Ice - A Sip For The Future</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+<script>
+    function startCountdown() {
+        // Set the target date (June 5, 2025)
+        const targetDate = new Date("June 5, 2025 00:00:00").getTime();
+
+        // Update the countdown every second
+        const timer = setInterval(function() {
+            // Get the current date and time
+            const now = new Date().getTime();
+
+            // Calculate the time difference
+            const timeLeft = targetDate - now;
+
+            // Convert time into days, hours, minutes, and seconds
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            // Display the result
+            document.getElementById("countdown").innerHTML =
+                `${days} DAYS ${hours} HOURS ${minutes} MINUTES ${seconds} SECONDS`;
+
+            // Stop countdown when target date is reached
+            if (timeLeft < 0) {
+                clearInterval(timer);
+                document.getElementById("countdown").innerHTML = "The event has started!";
+            }
+        }, 1000);
+    }
+
+    // Start the countdown when the page loads
+    window.onload = startCountdown;
+</script>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="header_bottom_border" id="wide_div">
+                        <div class="row align-items-center">
+                            <div class="col-xl-3 col-lg-3">
+                                <div class="">
+                                    <a href="index.html">
+                                        <img src="img/logo_two.png" alt="" class="logo img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="main-menu d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="#cause">The Cause</a></li>
+                                            <li><a href="get_involved.html">Get Involved</a></li>
+                                            <li><a href="/blog">Blog</a></li>
+                                            <li><a href="/gallery">Gallery</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                <div class="buy_tkt">
+                                    <div class="book_btn d-none d-lg-block">
+                                        <a href="https://forms.gle/5dL6VHkyDhrViJSS9" target="_blank" style="background-color: #D04A02; color: #fff;">Join the Trek</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mobile-nav-toggle d-lg-none">
+                                    <button id="mobile-menu-button">
+                                        ☰ Menu
+                                    </button>
+                                </div>
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area">
+        <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-12">
+                        <div class="slider_text text-center">
+                            <span id="countdown" class="wow fadeInLeft text-center text-2xl font-bold" data-wow-duration="1s" data-wow-delay=".6s" style="color: #D04A02;">
+                            </span>
+                            <br/>
+                            <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s" style="color: #D04A02;">5 June, 2025</span>
+                            <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">The Last Ice - A Sip for the Future</h3>
+                            <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">Embark on a transformative trek to Mount Kenya, where a sip of glacier ice sparks a global conversation on climate change</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+
+    <!-- about_area_start  -->
+    <div class="about_area black_bg" id="cause">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section_title text-center mb-80">
+                        <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">The Cause</h3>
+                        <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
+                            The retreat of Mount Kenya’s glaciers is not just a local issue—it’s a vivid illustration of the global climate crisis. Recent studies indicate that African glaciers have lost as much as <strong>80% of their volume</strong>                            since the early 20th century, and Mount Kenya’s ice caps are no exception. As global temperatures continue to rise, these ice reserves are melting at an alarming rate, with some projections warning that many of these glaciers
+                            could vanish within the next <strong>30 to 50 years</strong>.
+                        </p>
+
+                        <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
+                            This rapid decline has profound implications. The glaciers serve as natural water towers, regulating water supplies for millions of people in the region. Their loss jeopardizes local ecosystems, agriculture, and water security, and contributes to wider
+                            climate disruptions, including altered weather patterns and rising sea levels. <em>Globally, glaciers are retreating at an average rate of nearly 9 meters per decade</em>—a stark reminder that our
+                            planet's cooling systems are in peril.
+                        </p>
+
+                        <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
+                            Every melting glacier is a signal of the broader consequences of unchecked carbon emissions and unsustainable practices. The fate of Mount Kenya’s ice caps underscores the urgency of transforming our environmental policies and adopting sustainable solutions.
+                            <strong>The Last Ice</strong> is about more than witnessing nature’s transformation—it’s a call to action, urging us to confront climate change head-on and ensure a resilient, sustainable future for all.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 section_title text-center mb-80">
+                    <h3>Why This Matters</h3>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-6">
+                    <div class="about_thumb">
+                        <p>Mount Kenya's glaciers are retreating rapidly, serving as a stark reminder of the global climate crisis. Every melting piece of ice represents a disappearing resource, a luxury we once took for granted. <strong><em>The Last Ice</em></strong>                            transforms this abstract issue into a personal experience—encouraging us to recognize that our everyday choices can make a difference. By “Sipping the Last Ice” you can spark vital conversations and drive sustainable action
+                            before it's too late.</p>
+                        <hr style="border: 2px solid #fff;">
+                        <ul>
+                            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="color: #fff; font-size: x-large;"><strong>What is <strong><em>The Last Ice</em></strong> ?</strong>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="color: #fff; font-size: x-large;">A unique climate-awareness trek to Mount Kenya.</li>
+                            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="color: #fff; font-size: x-large;">A symbolic sipping of the <strong><em>The Last Ice</em></strong> as a call to action through interaction with the glaciers on Mount Kenya to personalize Climate Change.</li>
+                            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="color: #fff; font-size: x-large;">The essence of climbing Mount Kenya to collect ice for our drinks seeks to connect the relationship between the importance of saving our home (Earth) and the ability to enjoy luxuries such as a chilled drink.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6">
+                    <div class="about_info pl-68">
+                        <h4 class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">Registration</h4>
+                        <a href="https://forms.gle/5dL6VHkyDhrViJSS9" target="_blank" class="boxed-btn3  wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".7s" style="background-color: #D04A02;">Join the Trek</a>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-12 section_title text-center mb-80">
+                    <h3>How we are taking Action</h3>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-12 col-md-12">
+                    <div class="about_thumb">
+                        <p>At <strong><em>The Last Ice</em></strong>, our Mount Kenya trek is just the beginning—a powerful symbol to kickstart the climate conversation. We’re committed to taking this discussion directly to the grassroots across the country
+                            through a series of action-driven initiatives. For example, we’re organizing interactive climate fairs and community dialogues to spark local conversations about sustainability. We’re launching tree planting and reforestation
+                            campaigns in urban and rural areas to restore local ecosystems, alongside regular clean-up drives in neighborhoods and waterways to promote environmental stewardship. In addition, we’re partnering with schools and community
+                            centers to host educational workshops on renewable energy and sustainable practices, and even hosting climate hackathons to empower young innovators. By combining these on-the-ground efforts with our high-profile events, we’re
+                            transforming climate awareness into tangible action that resonates where it matters most—within our communities. Join us in turning awareness into community-driven change for a resilient, sustainable future.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about_area_end  -->
+
+    <div class="program_details_area detials_bg_1 overlay2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center mb-80  wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+                        <h3>Schedule</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="program_detail_wrap">
+                        <div class="single_propram">
+                            <div class="inner_wrap">
+                                <div class="circle_img"></div>
+                                <div class="porgram_top">
+                                    <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Registration & Check-In - 6:00 AM</span>
+                                    <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">D-Day (World Environment Day)</h4>
+                                </div>
+                                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Participants gather at the base camp where they receive eco-friendly gear, safety equipment, and event materials.</h4>
+                                <br/>
+                                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                                    <strong>Orientation & Safety Briefing:</strong> Event organizers and guides provide an overview of the day, safety instructions, and environmental guidelines, emphasizing the importance of sustainable practices during
+                                    the trek.
+                                </h4>
+
+                            </div>
+                        </div>
+                        <div class="single_propram">
+                            <div class="inner_wrap">
+                                <div class="circle_img"></div>
+                                <div class="porgram_top">
+                                    <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Morning Trek 7:00AM</span>
+                                    <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                                        The guided trek begins along scenic trails of Mount Kenya, with experienced guides highlighting key environmental features.
+                                    </h4>
+                                    <ul class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="color: #fff;">
+                                        <h4><strong>Informative Stops:</strong> Scheduled breaks allow participants to absorb the landscape and learn about the impact of climate change on the glaciers.</h4>
+                                    </ul>
+                                    <ul class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="color: #fff;">
+                                        <h4><strong>Scenic Photo Opportunities:</strong> Multiple stops for group photos and short discussions, reinforcing the connection between nature and climate advocacy.</h4>
+                                    </ul>
+
+                                    <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="color: #fff;">
+                                        Return to Base Camp:
+                                    </h4>
+                                    <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="color: #fff;">
+                                        Participants arrive back at the base camp as the expedition summits.
+                                    </h4>
+
+                                    <ul class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="color: #fff;">
+                                        <li><strong>Ceremonial Ice Sip:</strong> A symbolic, coordinated process where each participant uses a small, pre-approved piece of ice in their drink in tandem with the expedition using real glacier ice.</li>
+                                        <li><strong>Interactive Climate Talk:</strong> Environmental experts share insights on glacier retreat and climate change, engaging participants with Q&A and discussion points.</li>
+                                    </ul>
+
+                                </div>
+                                <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_propram">
+                            <div class="inner_wrap">
+                                <div class="circle_img"></div>
+                                <div class="porgram_top">
+                                    <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">The Toast & Pledge</span>
+                                </div>
+                                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Participants join in a group toast, raising their glasses as a commitment to sustainability. A keynote speaker or environmental advocate reinforces the message of immediate climate action.</h4>
+                                <br/>
+                                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                                    Social Sharing & Group Photo
+                                </h4>
+                                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                                    A coordinated group photo session encourages sharing the experience on social media with the hashtag
+                                    <strong>#SipTheLastIce</strong>.
+                                </p>
+
+                                <div class="thumb  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_propram">
+                            <div class="inner_wrap">
+                                <div class="circle_img"></div>
+                                <div class="porgram_top">
+                                    <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Debrief</span>
+                                </div>
+                                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                                    Participants' Debrief & Sustainability Action Kits
+                                </h4>
+                                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                                    Participants gather at base camp for a brief debrief and the distribution of sustainability action kits—digital resources and local conservation project information.
+                                </h4>
+                                <hr/>
+                                <div class="porgram_top">
+                                    <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Post-Event Engagement (Evening & Beyond)</span>
+                                </div>
+                                <br/>
+                                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                                    Networking & Informal Discussion (Evening)
+                                </h4>
+                                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                                    A relaxed dinner or networking session is held at an eco-friendly venue near the base camp, offering participants an opportunity to discuss the day’s experience and explore further sustainable initiatives.
+                                </h4>
+                                <br/>
+                                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                                    Digital Recap & Ongoing Engagement
+                                </h4>
+                                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                                    Following the event, a curated digital recap (video, photos, key highlights) is shared with participants via email and social media, inviting them to continue the conversation and join a community of climate advocates.
+                                </h4>
+
+                                <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about_area black_bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section_title text-center mb-80  wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+                                <h3>Who Can Participate?</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center text-white wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                        Open to individuals, adventure seekers, climate advocates, corporate teams, influencers, and media.
+                    </p>
+
+                    <div class="row">
+                        <!-- Explorer Pass -->
+                        <div class="col-md-4">
+                            <div class="card shadow-sm border-0">
+                                <div class="card-body">
+                                    <h4 class="card-title wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="color: #00264D;">Explorer Pass (Standard)</h4>
+                                    <p class="card-text wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="color: #000;">
+                                        <strong>Access:</strong> Full participation in the event, including the guided trek, safety equipment, and an eco-friendly event kit.
+                                    </p>
+                                    <br/>
+                                    <p class="card-text wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="color: #000;">Early Bird Discount: (20% off)</p>
+                                    <p class="card-text wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="color: #000;">Group discount for team sign-ups</p>
+                                    <p class="text-muted">Ideal for adventurers looking for a meaningful, budget-friendly entry.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trailblazer Pass -->
+                        <div class="col-md-4">
+                            <div class="card shadow-sm border-0">
+                                <div class="card-body">
+                                    <h4 class="card-title wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="color: #3B7A57;">Trailblazer Pass (Premium)</h4>
+                                    <p class="card-text" style="color: #000;">
+                                        <strong>Includes Everything in Explorer, Plus:</strong>
+                                    </p>
+                                    <ol>
+                                        <li>Exclusive event t-shirt & enhanced gear</li>
+                                        <li>Priority access to interactive sessions & Q&A</li>
+                                        <li>Post-event digital package with photos & videos</li>
+                                        <li>Limited-time branded memorabilia for early registrants</li>
+                                    </ol>
+                                    <p class="text-muted">Ideal for those seeking a deeper, personalized experience.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pioneer Pass -->
+                        <div class="col-md-4">
+                            <div class="card shadow-sm border-0">
+                                <div class="card-body">
+                                    <h4 class="card-title wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="color: #D04A02;">Pioneer Pass (VIP)</h4>
+                                    <p class="card-text" style="color: #000;">
+                                        <strong>All the Benefits of Trailblazer, Plus:</strong>
+                                    </p>
+                                    <ol>
+                                        <li>Dedicated guide for an enhanced trek</li>
+                                        <li>Front-row access during summit toast & keynote</li>
+                                        <li>Exclusive meet-and-greet with environmental experts</li>
+                                        <li>Invitation to post-event networking dinner</li>
+                                        <li>Participation certificate</li>
+                                    </ol>
+                                    <p class="text-muted">Limited slots for a premium, immersive experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End row -->
+                </div>
+                <!-- End col -->
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- End container -->
+    </div>
+    <!-- End about_area -->
+
+
+
+
+    <!-- brand_area_start  -->
+    <div class="brand_area black_bg" id="sponsors">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center mb-80">
+                        <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Partners</h4>
+                    </div>
+                    <div class="section_title text-center mb-80">
+                        <a href="https://forms.gle/5dL6VHkyDhrViJSS9" target="_blank" class="boxed-btn3  wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".7s" style="background-color: #D04A02;">Register as a Partner</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="brand_wrap">
+                        <div class="brand_active owl-carousel">
+                            <div class="single_brand text-center">
+                                <img src="img/brand/mozart.svg" alt="">
+                            </div>
+                            <div class="single_brand text-center">
+                                <img src="img/brand/2.png" alt="">
+                            </div>
+                            <div class="single_brand text-center">
+                                <img src="img/brand/3.png" alt="">
+                            </div>
+                            <div class="single_brand text-center">
+                                <img src="img/brand/4.png" alt="">
+                            </div>
+                            <div class="single_brand text-center">
+                                <img src="img/brand/5.png" alt="">
+                            </div>
+                            <div class="single_brand text-center">
+                                <img src="img/brand/1.png" alt="">
+                            </div>
+                            <div class="single_brand text-center">
+                                <img src="img/brand/2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- brand_area_end  -->
+    <!-- footer_start  -->
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="footer_widget">
+                            <div class="address_details text-center">
+                                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">5 June, 2025</h4>
+                                <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Mt Kenya</h3>
+                                <a href="https://forms.gle/5dL6VHkyDhrViJSS9" target="_blank" class="boxed-btn3 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" style="background-color: #D04A02; color: #fff;">Join the Trek</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_info py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Privacy Policy -->
+                    <div class="col-md-3 about_thumb">
+                        <h5 class="text-white">Privacy Policy</h5>
+                        <p class="text-muted">
+                            This Privacy Policy governs the collection, use, and protection of personal data by The Last Ice in compliance with applicable laws. By accessing our website or participating in our events, you consent to our data practices as detailed herein.
+                        </p>
+                    </div>
+
+                    <!-- Terms & Conditions -->
+                    <div class="col-md-3 about_thumb">
+                        <h5 class="text-white">Terms & Conditions</h5>
+                        <p class="text-muted">
+                            These Terms & Conditions constitute a binding agreement between you and The Last Ice. Your participation in our events and use of our website are subject to these provisions, which include guidelines on conduct, liability limitations, and event procedures.
+                        </p>
+                    </div>
+
+                    <!-- Sustainability Commitment -->
+                    <div class="col-md-3 about_thumb">
+                        <h5 class="text-white">Sustainability Commitment</h5>
+                        <p class="text-muted">
+                            The Last Ice is committed to maintaining transparent and verifiable environmental practices. This section outlines our ongoing sustainability initiatives, standards, and reporting obligations to ensure accountability in our environmental actions.
+                        </p>
+                    </div>
+
+                    <!-- Media Kit -->
+                    <div class="col-md-3 about_thumb">
+                        <h5 class="text-white">Media Kit</h5>
+                        <p class="text-muted">
+                            The Media Kit provides authorized press releases, official logos, and brand materials for media use. Use of these materials is subject to The Last Ice’s guidelines, and any unauthorized reproduction is strictly prohibited.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer_end  -->
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/gijgo.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/plugins.js"></script>
+
+
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById("mobile-menu-button").addEventListener("click", function() {
+            document.querySelector(".main-menu nav").classList.toggle("show");
+        });
+    </script>
+</body>
+
+</html>
