@@ -1,0 +1,40 @@
+name: Deploy Static Site via Docker
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Build Docker image
+      run: docker build -t static-site .
+
+    - name: Save image as tarball
+      run: docker save static-site > static-site.tar
+
+    - name: Copy Docker image to droplet
+      uses: appleboy/scp-action@v0.1.6
+      with:
+        host: ${{ secrets.DO_HOST }}
+        username: ${{ secrets.DO_USER }}
+        key: ${{ secrets.DO_SSH_KEY }}
+        source: static-site.tar
+        target: ~/deployments
+
+    - name: Load & Run Docker container remotely
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.DO_HOST }}
+        username: ${{ secrets.DO_USER }}
+        key: ${{ secrets.DO_SSH_KEY }}
+        script: |
+          docker load < ~/deployments/static-site.tar
+          docker stop thelastice || true && docker rm thelastice || true
+          docker run -d --name thelastice -p 8081:80 static-site
